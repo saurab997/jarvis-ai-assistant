@@ -42,6 +42,7 @@ jarvis-ai-assistant/
 │
 ├── modules/
 │   ├── ai.py
+│   ├── commands.py
 │   ├── musiclibrary.py
 │   ├── news.py
 │   └── speech.py
@@ -49,7 +50,6 @@ jarvis-ai-assistant/
 ├── .env
 ├── .gitignore
 ├── client.py
-├── commands.py
 ├── main.py
 ├── README.md
 └── requirements.txt
