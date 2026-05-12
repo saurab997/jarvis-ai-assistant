@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+data/history.json
+temp.mp3
+.venv/
