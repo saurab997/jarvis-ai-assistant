@@ -103,8 +103,8 @@ pip install -r requirements.txt
 Create a `.env` file in the root directory and add:
 
 ```env
-OPENAI_API_KEY=your_openai_api_key
-NEWS_API_KEY=your_newsapi_key
+OPENAI_API_KEY="your_openai_api_key"
+NEWS_API_KEY="your_newsapi_key"
 ```
 
 ---
@@ -125,6 +125,10 @@ python main.py
 * "Play Yellow"
 * "Tell me the news"
 * "What is artificial intelligence?"
+
+P.S: If you want to change wake keyword "jarvis" to anything just go to main.py:
+Line 27:
+if word.lower() == "jarvis": here change jarvis to the wake up word of your liking.
 
 ---
 

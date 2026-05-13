@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
             word = r.recognize_google(audio)
 
-            if word.lower() == "hello":
+            if word.lower() == "jarvis":
                 speak("Yes, how can I assist you?")
 
                 with sr.Microphone() as source:

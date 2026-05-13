@@ -3,6 +3,8 @@ from gtts import gTTS
 import pygame
 import os
 
+engine = pyttsx3.init()
+
 def speak_old(text):
    engine.say(text)
    engine.runAndWait()
