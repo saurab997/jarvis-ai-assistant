@@ -7,7 +7,7 @@ response = client.responses.create(
 )
 
 completion = client.chat.completions.create(
-    model="gpt-5.5",
+    model="gpt-4o",
     messages=[
         {"role": "system", "content": "You are a virtual assistant named Jarvis skilled in general tasks like Alexa and Google Cloud."},
         {"role": "user", "content": "What is coding?"}

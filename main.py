@@ -1,6 +1,6 @@
 import speech_recognition as sr
 from modules.speech import speak
-from modules.commands import processCommand
+from modules.commands import log, processCommand
 
 if __name__ == "__main__":
 
@@ -24,12 +24,12 @@ if __name__ == "__main__":
 
             word = r.recognize_google(audio)
 
-            if word.lower() == "jarvis":
+            if word.lower() == "hello":
                 speak("Yes, how can I assist you?")
 
                 with sr.Microphone() as source:
 
-                    print("Jarvis active...")
+                    log("Jarvis active...")
 
                     audio = r.listen(source)
 
@@ -40,4 +40,5 @@ if __name__ == "__main__":
 
             print("Sorry, I did not understand that.")
             print(e)
+
 

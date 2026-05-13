@@ -6,7 +6,7 @@ from modules import musiclibrary
 from datetime import datetime
 
 def log(msg):
-    print(f"[Jarvis{datetime.now().strftime('%H:%M:%S')}] {msg}")
+    print(f"[Jarvis {datetime.now().strftime('%H:%M:%S')}] {msg}")
 
 def processCommand(c):
 

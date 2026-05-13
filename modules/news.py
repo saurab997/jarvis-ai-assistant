@@ -1,5 +1,8 @@
 import requests
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 newsapi = os.getenv("NEWS_API_KEY")
 

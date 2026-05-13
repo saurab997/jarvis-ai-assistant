@@ -1,5 +1,8 @@
 from openai import OpenAI
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def aiResponse(command):
    client = OpenAI(
@@ -7,7 +10,7 @@ def aiResponse(command):
    )
 
    completion = client.chat.completions.create(
-    model="gpt-5.5",
+    model="gpt-4o",
     messages=[
         {"role": "system", "content": "You are a virtual assistant named Jarvis skilled in general tasks like Alexa and Google Cloud. Give short responses and do not ask follow up questions."},
         {"role": "user", "content": command}
